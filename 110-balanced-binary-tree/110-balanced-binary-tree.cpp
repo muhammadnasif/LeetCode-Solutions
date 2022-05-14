@@ -17,7 +17,6 @@ public:
         }
         int l=calcDepth(root->left);
         int r=calcDepth(root->right);
-        cout<<"node val -- "<<root->val<<" | "<<l<<" "<<r<<endl;
         if(abs(l-r)>1){
             return 99999;
         }
@@ -25,7 +24,6 @@ public:
     }
     bool isBalanced(TreeNode* root) {
         int d = calcDepth(root);
-        cout<<"Deep -- "<<d<<endl;
         if(d>=99999){
             return false;
         }
