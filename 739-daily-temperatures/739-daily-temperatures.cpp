@@ -1,11 +1,10 @@
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
+        ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
         stack<int> stk;
         vector<int> res(temperatures.size(), 0);
         stk.push(0);
-        
-        
         for(int i=1;i<temperatures.size();i++){
             if(stk.empty()){
                 stk.push(i);
