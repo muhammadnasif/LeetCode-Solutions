@@ -5,7 +5,7 @@ class Solution:
         
         
         for elem in strs:
-            d[''.join(sorted(elem))].append(elem)
+            d[tuple(sorted(elem))].append(elem)
             
         res = []
         for key in d:
